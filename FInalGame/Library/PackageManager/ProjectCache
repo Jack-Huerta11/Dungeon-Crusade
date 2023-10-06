@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638315571874045397
+      ticks: 638320729880000000
     m_Hash: 1848896402
   m_LockFileStatus:
     m_FilePath: C:/Users/jhhue/Documents/GitHub/Dungeon-Crusade/FInalGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638315571874085428
+      ticks: 638320729880000000
     m_Hash: 2262209680
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
