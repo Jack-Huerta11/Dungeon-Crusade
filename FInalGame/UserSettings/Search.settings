@@ -10,7 +10,7 @@ showStatusBar = false
 scopes = {
 	"last_search.310DEAF1" = "navigation"
 	"OpenInspectorPreview.310DEAF1" = "0"
-	"currentGroup.310DEAF1" = "menu"
+	"currentGroup.310DEAF1" = "asset"
 }
 providers = {
 	find = {

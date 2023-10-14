@@ -315,8 +315,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 8
-    altNegativeButton: 
-    altPositiveButton: left shift
+    altNegativeButton: left ctrl
+    altPositiveButton: 
     gravity: 1
     dead: 0.001
     sensitivity: 1
