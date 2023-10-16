@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047ebd4d70bb7584d9a10d3a96179879, type: 3}
+  m_Name: HelmetOfGold
+  m_EditorClassIdentifier: 
+  name: HelmetOfGold
+  icon: {fileID: 21300000, guid: acb697bf98c8ec24aba97bc7cf425dc2, type: 3}
+  isDefaultItem: 0
+  equipSlot: 0
+  mesh: {fileID: 7544568972173159413, guid: cf5dcf49c9a9a1843b794e71d2f50528, type: 3}
+  armorModifier: 25
+  damageModifier: 0
