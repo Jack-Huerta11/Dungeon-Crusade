@@ -28,7 +28,26 @@ public class PlayerStats : CharacterStats {
 			damage.RemoveModifier(oldItem.damageModifier);
 		}
 		
-	}
+	} 
+	 public void RestoreHealth(int amount)
+    {
+        // Add logic here to restore the player's health.
+        // You can ensure that health doesn't exceed the maximum health.
+
+        currentHealth += amount;
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        // Update your health bar or perform other actions as needed.
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(currentHealth);
+        }
+    }
+
 
 	public override void Die()
 	{
