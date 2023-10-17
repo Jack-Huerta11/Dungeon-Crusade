@@ -3,7 +3,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private CameraController cameraController;
-    private Transform currentLockOnTarget;
     private float lockOnRadius = 10f; // Adjust this radius as needed
 
     private void Start()
@@ -70,25 +69,6 @@ public class PlayerController : MonoBehaviour
                     nearestInteractable = collider.transform;
                 }
             }
-        }
-
-        if (nearestInteractable != null)
-        {
-            if (currentLockOnTarget != null)
-            {
-                // Unlock from the current lock-on target
-                cameraController.ToggleLockOn(null);
-            }
-
-            // Lock on to the nearest interactable
-            cameraController.ToggleLockOn(nearestInteractable);
-            currentLockOnTarget = nearestInteractable;
-        }
-        else
-        {
-            // Unlock from the current lock-on target
-            cameraController.ToggleLockOn(null);
-            currentLockOnTarget = null;
         }
     }
 }

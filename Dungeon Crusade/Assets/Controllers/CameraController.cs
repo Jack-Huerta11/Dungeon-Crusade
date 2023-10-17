@@ -1,86 +1,51 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
+// Makes the camera follow the player
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target; // The current target (player)
-    public Transform lockOnTarget; // The target to lock onto
-    public float smoothSpeed = 5.0f; // Smoothing factor for camera movement
-    public Vector3 offset; // Offset of the camera relative to the target
-    public float sensitivity = 2.0f; // Rotation sensitivity
+    public Transform target;    // Target to follow (player)
 
-    // Rotation limits for the camera
-    public float minYAngle = -30.0f;
-    public float maxYAngle = 80.0f;
+    public Vector3 offset;           // Offset from the player
+    public float zoomSpeed = 4f;    // How quickly we zoom
+    public float minZoom = 5f;       // Min zoom amount
+    public float maxZoom = 15f;      // Max zoom amount
 
-    private float rotationX = 0;
-    private float rotationY = 0;
+    public float pitch = 2f;        // Pitch up the camera to look at head
 
-    private bool isLockedOn = false; // Whether the camera is locked on
+    public float yawSpeed = 100f;   // How quickly we rotate
 
-    private void LateUpdate()
+    // In these variables we store input from Update
+    private float currentZoom = 10f;
+    private float currentYaw = 0f;
+
+    void Update()
     {
-        if (!isLockedOn)
+        // Adjust our zoom based on the scroll wheel
+        currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+        currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
+
+        // Rotate with Q and E keys
+        if (Input.GetKey(KeyCode.Q))
         {
-            if (target == null)
-            {
-                Debug.LogWarning("Camera target is not set!");
-                return;
-            }
-
-            // Calculate the desired position for the camera
-            Vector3 desiredPosition = target.position - offset;
-
-            // Smoothly move the camera towards the desired position
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
-            transform.position = smoothedPosition;
-
-            // Implement camera rotation based on player input for free look
-            RotateCamera();
+            currentYaw -= yawSpeed * Time.deltaTime;
         }
-        else
+        if (Input.GetKey(KeyCode.E))
         {
-            if (lockOnTarget == null)
-            {
-                Debug.LogWarning("Lock-on target is not set!");
-                isLockedOn = false;
-                return;
-            }
-
-            // Calculate the desired position for the camera when locked on
-            Vector3 desiredPosition = lockOnTarget.position - offset;
-
-            // Smoothly move the camera towards the desired position
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
-            transform.position = smoothedPosition;
-
-            // Always look at the lock-on target
-            transform.LookAt(lockOnTarget);
+            currentYaw += yawSpeed * Time.deltaTime;
         }
     }
 
-    private void RotateCamera()
+    void LateUpdate()
     {
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
+        // Set our camera's position based on offset and zoom
+        transform.position = target.position - offset * currentZoom;
+        // Look at the player's head
+        transform.LookAt(target.position + Vector3.up * pitch);
 
-        // Rotate the character horizontally based on the mouse X input
-        target.Rotate(Vector3.up * mouseX * sensitivity);
-
-        // Rotate the camera vertically (pitch) based on the mouse Y input
-        rotationX -= mouseY * sensitivity;
-        rotationX = Mathf.Clamp(rotationX, minYAngle, maxYAngle);
-
-        // Rotate the camera around its local X-axis (pitch)
-        rotationY -= mouseY * sensitivity;
-        rotationY = Mathf.Clamp(rotationY, minYAngle, maxYAngle);
-
-        transform.localRotation = Quaternion.Euler(rotationY, 0, 0);
-    }
-
-    // Method to toggle lock-on mode
-    public void ToggleLockOn(Transform newLockOnTarget = null)
-    {
-        isLockedOn = !isLockedOn;
-        lockOnTarget = newLockOnTarget;
+        // Rotate around the player
+        transform.RotateAround(target.position, Vector3.up, currentYaw);
     }
 }
