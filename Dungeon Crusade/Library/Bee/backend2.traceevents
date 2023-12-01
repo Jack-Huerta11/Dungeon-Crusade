@@ -1,228 +1,344 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1697583854325216, "dur":20754, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1697583854345980, "dur":59, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1697583854346072, "dur":435, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1697583854346542, "dur":3014, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1697583854349558, "dur":210420, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1697583854560019, "dur":82, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1697583854560280, "dur":2180, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1697583854346797, "dur":2766, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1697583854349566, "dur":3040, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1697583854447052, "dur":477, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":1, "ts":1697583854447533, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1697583854447814, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playera14adcc9-inputdata.json" }}
-,{ "pid":12345, "tid":1, "ts":1697583854447531, "dur":486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1697583854448553, "dur":105243, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1697583854556637, "dur":1886, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1697583854556635, "dur":1890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1697583854558549, "dur":1206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/boot.config" }}
-,{ "pid":12345, "tid":2, "ts":1697583854346797, "dur":2771, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1697583854349573, "dur":363, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1697583854349936, "dur":2677, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1697583854352616, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1697583854379816, "dur":1471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1697583854381330, "dur":66, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1697583854381398, "dur":1693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854383129, "dur":1810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854384956, "dur":311, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854384955, "dur":313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854385281, "dur":1798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854387140, "dur":611, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854387139, "dur":613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854387767, "dur":1600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854389478, "dur":1564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854391077, "dur":1804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854392909, "dur":1701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854394646, "dur":2045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854396725, "dur":1754, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854398516, "dur":1956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854400501, "dur":1815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854402370, "dur":2788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854405269, "dur":3021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854408344, "dur":2410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854410820, "dur":2460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854413319, "dur":2589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854415945, "dur":14568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1697583854430535, "dur":129257, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1697583854346877, "dur":2715, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1697583854349594, "dur":343, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1697583854349937, "dur":2822, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1697583854352771, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
-,{ "pid":12345, "tid":3, "ts":1697583854352760, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1697583854454043, "dur":1630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1697583854455705, "dur":104275, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1697583854346845, "dur":2737, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1697583854349584, "dur":526, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1697583854350110, "dur":2568, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1697583854439002, "dur":1455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1697583854440487, "dur":119430, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1697583854346833, "dur":2743, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1697583854349579, "dur":393, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1697583854349972, "dur":2690, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1697583854408430, "dur":1507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1697583854409965, "dur":1974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1697583854411966, "dur":2581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1697583854414575, "dur":2199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1697583854416801, "dur":3415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1697583854420345, "dur":147, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1697583854424186, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1697583854420497, "dur":3777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/resources.assets" }}
-,{ "pid":12345, "tid":5, "ts":1697583854424338, "dur":135557, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1697583854346874, "dur":2713, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1697583854349589, "dur":532, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1697583854350122, "dur":2492, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1697583854354451, "dur":2855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":6, "ts":1697583854357831, "dur":1411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1697583854359337, "dur":1180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1697583854360811, "dur":1055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1697583854361916, "dur":1315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1697583854363622, "dur":1443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1697583854365089, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
-,{ "pid":12345, "tid":6, "ts":1697583854365088, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade.exe" }}
-,{ "pid":12345, "tid":6, "ts":1697583854365212, "dur":2078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade.exe" }}
-,{ "pid":12345, "tid":6, "ts":1697583854368205, "dur":4571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854372812, "dur":1538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854374417, "dur":1501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854375951, "dur":2342, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854378418, "dur":2177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854380643, "dur":2112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854382800, "dur":1651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854384506, "dur":1627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854386157, "dur":213, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854386156, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854386386, "dur":1575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854388040, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854388038, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854388182, "dur":1534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854389776, "dur":1466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854391276, "dur":1502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854392831, "dur":1859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854394750, "dur":1504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854396283, "dur":1979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854398292, "dur":1997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854400396, "dur":1973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854402402, "dur":1740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854404174, "dur":1823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854406028, "dur":2816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854408875, "dur":1967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854410878, "dur":2166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854413078, "dur":2714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854415829, "dur":2742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1697583854418604, "dur":3543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1697583854426241, "dur":81, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1697583854422253, "dur":4141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":6, "ts":1697583854426461, "dur":133498, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1697583854346915, "dur":2683, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1697583854349601, "dur":359, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1697583854349960, "dur":2648, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1697583854352630, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1697583854453522, "dur":1564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/app.info" }}
-,{ "pid":12345, "tid":7, "ts":1697583854455089, "dur":104727, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1697583854346940, "dur":2663, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1697583854349605, "dur":640, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1697583854350246, "dur":2374, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1697583854354965, "dur":2334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1697583854357785, "dur":1568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1697583854359677, "dur":1328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1697583854361106, "dur":1241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1697583854362405, "dur":1509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1697583854364397, "dur":1897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854367101, "dur":4807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1697583854372097, "dur":3361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854375500, "dur":1714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854377255, "dur":1352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854378635, "dur":75, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1697583854378712, "dur":1903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854380652, "dur":2447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854383127, "dur":1738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854384884, "dur":107, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854384883, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854385003, "dur":1682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854386751, "dur":240, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854386750, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854387002, "dur":1822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854388919, "dur":1872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854390828, "dur":1540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854392405, "dur":1391, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854393836, "dur":1472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854395347, "dur":1702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854397081, "dur":2616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854399779, "dur":2085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854401906, "dur":1973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854403910, "dur":2141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854406115, "dur":3005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854409148, "dur":2182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854411375, "dur":2527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854413946, "dur":3612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1697583854417594, "dur":3016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":8, "ts":1697583854425186, "dur":105, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1697583854420684, "dur":4641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/level0.resS" }}
-,{ "pid":12345, "tid":8, "ts":1697583854425411, "dur":134415, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1697583854346970, "dur":2635, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1697583854349607, "dur":382, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1697583854349989, "dur":2627, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1697583854363061, "dur":1636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":9, "ts":1697583854364811, "dur":7157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854372158, "dur":3682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854375880, "dur":2342, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854378291, "dur":2062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854380390, "dur":1766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854382212, "dur":2462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854384708, "dur":1676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854386575, "dur":342, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854386574, "dur":344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854386932, "dur":1703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854388693, "dur":177, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854388692, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854388883, "dur":1799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854390766, "dur":1750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854392558, "dur":1667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854394258, "dur":2028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854396350, "dur":1633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854398040, "dur":1918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854399997, "dur":1853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854401897, "dur":1632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854403636, "dur":2094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854405761, "dur":2641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854408457, "dur":1777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854410264, "dur":2343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854412639, "dur":2497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854415168, "dur":2953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1697583854418208, "dur":2396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":9, "ts":1697583854420686, "dur":5492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/level0" }}
-,{ "pid":12345, "tid":9, "ts":1697583854426328, "dur":133648, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1697583854347026, "dur":2588, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1697583854349615, "dur":3004, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1697583854352620, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":10, "ts":1697583854407820, "dur":1621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":10, "ts":1697583854409472, "dur":2165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1697583854411662, "dur":3488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1697583854415180, "dur":2633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1697583854417837, "dur":3230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":10, "ts":1697583854421162, "dur":6876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":10, "ts":1697583854428104, "dur":131837, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1697583854346996, "dur":2614, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1697583854349610, "dur":3001, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1697583854352618, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":11, "ts":1697583854393787, "dur":1967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":11, "ts":1697583854395793, "dur":1676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854397500, "dur":1879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854399433, "dur":1747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854401209, "dur":1625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854402868, "dur":2294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854405205, "dur":2494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854407747, "dur":2165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854409999, "dur":2106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854412154, "dur":2973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854415159, "dur":2410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1697583854417653, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":11, "ts":1697583854417651, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":11, "ts":1697583854417779, "dur":3446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":11, "ts":1697583854421286, "dur":5117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":11, "ts":1697583854426482, "dur":133320, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1697583854347049, "dur":2572, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1697583854349622, "dur":3049, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1697583854428465, "dur":1647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1697583854430142, "dur":129798, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1697583854565521, "dur":1215, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1701410376138460, "dur":16441, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376154906, "dur":86, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376155021, "dur":346, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376156000, "dur":114, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1701410376156234, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1701410376155392, "dur":2868, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376158262, "dur":99275, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376257538, "dur":174, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376257713, "dur":120, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376257833, "dur":51, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376258073, "dur":1638, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1701410376155571, "dur":2697, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701410376158271, "dur":2544, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701410376160835, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701410376161966, "dur":819, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1701410376162789, "dur":85, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1701410376162883, "dur":5262, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1701410376168305, "dur":111, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playera14adcc9-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1701410376168456, "dur":140, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.BuildTools.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376168596, "dur":196, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376168793, "dur":181, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.CSharpSupport.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376168975, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.DotNet.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376169101, "dur":194, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.NativeProgramSupport.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376169296, "dur":149, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Stevedore.Program.exe" }}
+,{ "pid":12345, "tid":1, "ts":1701410376169446, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TinyProfiler2.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376169542, "dur":120, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.GNU.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376169663, "dur":104, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.LLVM.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376169767, "dur":161, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.VisualStudio.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376169929, "dur":128, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.Xcode.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376170057, "dur":124, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Tools.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376170181, "dur":131, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TundraBackend.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376170313, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.VisualStudioSolution.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376170410, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeBuildProgramCommon.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376170492, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeBuildProgramCommon.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376170582, "dur":261, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeLocalCacheTool.exe" }}
+,{ "pid":12345, "tid":1, "ts":1701410376170844, "dur":621, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376171465, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\NiceIO.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376171590, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376171680, "dur":193, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376171874, "dur":127, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\ScriptCompilationBuildProgram.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376172002, "dur":124, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\ScriptCompilationBuildProgram.exe" }}
+,{ "pid":12345, "tid":1, "ts":1701410376172127, "dur":290, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\SharpYaml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376172418, "dur":134, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Api.Attributes.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376172553, "dur":371, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376172924, "dur":116, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376173041, "dur":135, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376173177, "dur":103, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376173281, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Api.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376173378, "dur":130, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.BuildLogic.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376173509, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376173598, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Linker.Api.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376173694, "dur":249, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Options.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701410376162788, "dur":11157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1701410376174175, "dur":56, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701410376174398, "dur":80518, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1701410376256582, "dur":100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1701410376256581, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1701410376256697, "dur":809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1701410376155621, "dur":2662, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376158286, "dur":408, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376158695, "dur":2151, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376160858, "dur":218, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":2, "ts":1701410376160847, "dur":230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1701410376161078, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376161205, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376161327, "dur":2449, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376161326, "dur":2451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376163778, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376163868, "dur":188, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376163867, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376164057, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376164161, "dur":179, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376164160, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376164341, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376164427, "dur":539, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376164426, "dur":541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701410376164967, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376165146, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376165272, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376165390, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376165504, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376165621, "dur":492, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376166120, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376166224, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376166334, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376166558, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376166654, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701410376166743, "dur":91000, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376155612, "dur":2662, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376158280, "dur":345, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376158625, "dur":2203, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376160866, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161016, "dur":227, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161005, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161245, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161391, "dur":273, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161390, "dur":275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161665, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161751, "dur":457, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376161750, "dur":458, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376162209, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376162288, "dur":59, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376162349, "dur":252, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376162348, "dur":254, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376162602, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376162735, "dur":2159, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376162734, "dur":2161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376164895, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165002, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165207, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165320, "dur":152, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165319, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165474, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165635, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165734, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165837, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376165939, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166061, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166176, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166275, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166362, "dur":71, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166435, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166550, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166612, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701410376166697, "dur":91072, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376155645, "dur":2644, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376158291, "dur":520, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376158812, "dur":2020, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376160857, "dur":245, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1701410376160834, "dur":268, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1701410376161103, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376161212, "dur":688, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376161211, "dur":690, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376161901, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376162007, "dur":311, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376162006, "dur":313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376162319, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376162417, "dur":185, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376162416, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376162603, "dur":394, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376163003, "dur":1092, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376163002, "dur":1094, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376164097, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376164193, "dur":280, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376164192, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376164474, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376164552, "dur":121, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376164683, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376164792, "dur":277, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376165076, "dur":251, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376165377, "dur":402, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376165784, "dur":123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376165783, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701410376165909, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376166080, "dur":501, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376166586, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701410376166735, "dur":91015, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376155678, "dur":2615, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376158295, "dur":477, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376158772, "dur":2045, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376160834, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376162446, "dur":521, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1701410376162970, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1701410376163205, "dur":2400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1701410376165610, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376165726, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376165838, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376165949, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376166070, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376166168, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376166273, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376166366, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376166450, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376166562, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701410376166683, "dur":90849, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376155716, "dur":2583, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376158301, "dur":305, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376158606, "dur":2218, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376160856, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376160991, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376161109, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376161229, "dur":6733, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1701410376161217, "dur":6747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1701410376167965, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701410376168073, "dur":89475, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376155729, "dur":2575, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376158307, "dur":385, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376158693, "dur":2125, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376160844, "dur":4515, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1701410376160825, "dur":4535, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1701410376165361, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376165458, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376165559, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376165709, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376165828, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376165942, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376166060, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376166170, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376166371, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376166529, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701410376166711, "dur":91047, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376155758, "dur":2550, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376158310, "dur":813, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376159124, "dur":1702, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376160850, "dur":334, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":8, "ts":1701410376160829, "dur":356, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1701410376161185, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376161296, "dur":3805, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701410376161295, "dur":3807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701410376165103, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376165212, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376165318, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376165421, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376165557, "dur":908, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376166469, "dur":1655, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1701410376166468, "dur":1657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1701410376168126, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701410376168204, "dur":89340, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376155795, "dur":2517, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376158314, "dur":749, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376159063, "dur":1778, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376160873, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376161015, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376161226, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376161390, "dur":310, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376161380, "dur":320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376161701, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376161778, "dur":1020, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376161777, "dur":1022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376162799, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376162909, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376162907, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376163070, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376163168, "dur":271, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376163167, "dur":273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376163440, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376163527, "dur":376, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376163526, "dur":378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376163905, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376164011, "dur":419, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376164010, "dur":421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376164432, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376164567, "dur":280, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376164566, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701410376164848, "dur":635, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376165494, "dur":293, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376165795, "dur":401, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376166202, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376166359, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376166455, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1701410376166455, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1701410376166532, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376166602, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701410376166681, "dur":90854, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376155821, "dur":2497, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376158319, "dur":2503, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376160864, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376160983, "dur":185, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1701410376160973, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1701410376161168, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376161275, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376161378, "dur":3014, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701410376161377, "dur":3016, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701410376164394, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376164567, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701410376164566, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701410376164677, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376164774, "dur":95, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701410376164876, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376165026, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376165141, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376165260, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376165387, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376165489, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376165605, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376165703, "dur":304, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376166014, "dur":18346, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701410376166013, "dur":18349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701410376184363, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701410376184444, "dur":73319, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376155850, "dur":2474, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376158325, "dur":2512, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376160873, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376161022, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376161145, "dur":222, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1701410376161133, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1701410376161368, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376161482, "dur":408, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376161481, "dur":410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376161891, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162003, "dur":300, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162002, "dur":302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162305, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162383, "dur":159, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162382, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162543, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162645, "dur":504, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376162643, "dur":506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163150, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163219, "dur":376, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163218, "dur":378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163596, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163695, "dur":192, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\netstandard.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163695, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163888, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163973, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376163972, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164079, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164175, "dur":349, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\jhhue\\Dungeon Crusade\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164174, "dur":350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164525, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164623, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164714, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164815, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376164912, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165004, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165108, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165230, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165365, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165480, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165613, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165736, "dur":191, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165735, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376165928, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166046, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166143, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166277, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166363, "dur":64, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166430, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166545, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166680, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701410376166763, "dur":90790, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701410376155870, "dur":2459, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701410376158329, "dur":2491, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701410376160848, "dur":252, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity\\2022.3.7f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":12, "ts":1701410376160825, "dur":276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":12, "ts":1701410376161102, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701410376161220, "dur":26613, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":12, "ts":1701410376161220, "dur":26615, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Unity Projects tests/Dungeon Crusade_Data/Dungeon Crusade.exe" }}
+,{ "pid":12345, "tid":12, "ts":1701410376187836, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701410376187902, "dur":69636, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701410376262199, "dur":1495, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

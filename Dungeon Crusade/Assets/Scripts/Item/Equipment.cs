@@ -18,12 +18,27 @@ public class Equipment : Item {
 
 	// When pressed in inventory
 	public override void Use()
-	{
-		base.Use();
-		EquipmentManager.instance.Equip(this);	// Equip it
-		RemoveFromInventory();					// Remove it from inventory
-	}
+{
+    base.Use();
 
+    if (EquipmentManager.instance != null)
+    {
+        EquipmentManager.instance.Equip(this); // Equip it
+
+        if (Inventory.instance != null)
+        {
+            RemoveFromInventory(); // Remove it from inventory
+        }
+        else
+        {
+            Debug.LogError("Inventory.instance is not assigned.");
+        }
+    }
+    else
+    {
+        Debug.LogError("EquipmentManager.instance is not assigned.");
+    }
 }
 
+}
 public enum EquipmentSlot { Head, Chest, Legs, Weapon, Shield, Feet }

@@ -407,7 +407,9 @@
 "Assets/Environment/PostProcessing/Editor/Utils/EditorResources.cs"
 "Assets/Environment/PostProcessing/Editor/Utils/FxStyles.cs"
 "Assets/Environment/PostProcessing/Editor/Utils/ReflectionUtils.cs"
-"Assets/Map Generation/Editor/MapGeneratorEditor.cs"
+"Assets/Map Generation/Editor/MapPreviewEditor.cs"
+"Assets/Map Generation/Editor/UpdatableDataEditor.cs"
+"Assets/Mini Simple Characters Skeleton Demo/Readme/Scripts/Editor/ReadmeEditor.cs"
 -langversion:9.0
 
 /deterministic

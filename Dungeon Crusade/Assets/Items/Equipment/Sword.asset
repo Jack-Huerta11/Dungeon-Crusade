@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047ebd4d70bb7584d9a10d3a96179879, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 21300000, guid: 9361716aa86c05d48a94e2897810a857, type: 3}
+  name: Sword
+  icon: {fileID: 21300000, guid: e67e83aae8653424d9591db4d0fd2bf7, type: 3}
   isDefaultItem: 0
   equipSlot: 3
-  armorModifer: 0
-  damageModifer: 7
+  armorModifier: 0
+  damageModifier: 5
+  mesh: {fileID: 0}
+  coveredMeshRegions: 

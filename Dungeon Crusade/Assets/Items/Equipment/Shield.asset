@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047ebd4d70bb7584d9a10d3a96179879, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  name: Shield
-  icon: {fileID: 21300000, guid: 63f365b0194a45840b6e694762839c35, type: 3}
+  name: Sheild
+  icon: {fileID: 21300000, guid: 82433b315860abb4487f6df82b18feb4, type: 3}
   isDefaultItem: 0
   equipSlot: 4
-  armorModifer: 0
-  damageModifer: 0
+  armorModifier: 5
+  damageModifier: 0
+  mesh: {fileID: 0}
+  coveredMeshRegions: 

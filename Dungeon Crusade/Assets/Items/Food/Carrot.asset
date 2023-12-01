@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eec06548bdd48a4caf0c3a38f234265, type: 3}
   m_Name: Carrot
   m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 0}
+  itemName: 
   name: Carrot
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300068, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
   isDefaultItem: 0
   foodName: Carrot
   healthRestoreAmount: 20

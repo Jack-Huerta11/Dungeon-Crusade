@@ -1,51 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-// Makes the camera follow the player
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;    // Target to follow (player)
+    public Transform playerTransform; // Reference to the player's transform
+    public float sensitivity = 2f; // Mouse sensitivity 
+    public float rotationSmoothing = 0.1f; // Smoothing factor for camera rotation
+    public float distanceFromPlayer = 5f; // Distance from the player
+    public float heightOffset = 2f; // Height offset from the player
 
-    public Vector3 offset;           // Offset from the player
-    public float zoomSpeed = 4f;    // How quickly we zoom
-    public float minZoom = 5f;       // Min zoom amount
-    public float maxZoom = 15f;      // Max zoom amount
-
-    public float pitch = 2f;        // Pitch up the camera to look at head
-
-    public float yawSpeed = 100f;   // How quickly we rotate
-
-    // In these variables we store input from Update
-    private float currentZoom = 10f;
-    private float currentYaw = 0f;
+    private float mouseX, mouseY;
 
     void Update()
     {
-        // Adjust our zoom based on the scroll wheel
-        currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
-        currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
-
-        // Rotate with Q and E keys
-        if (Input.GetKey(KeyCode.Q))
-        {
-            currentYaw -= yawSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.E))
-        {
-            currentYaw += yawSpeed * Time.deltaTime;
-        }
+        HandleRotationInput();
     }
 
-    void LateUpdate()
+    void HandleRotationInput()
     {
-        // Set our camera's position based on offset and zoom
-        transform.position = target.position - offset * currentZoom;
-        // Look at the player's head
-        transform.LookAt(target.position + Vector3.up * pitch);
+        mouseX += Input.GetAxis("Mouse X") * sensitivity;
+        mouseY -= Input.GetAxis("Mouse Y") * sensitivity;
 
-        // Rotate around the player
-        transform.RotateAround(target.position, Vector3.up, currentYaw);
+        // Clamp vertical rotation to prevent camera flipping
+        mouseY = Mathf.Clamp(mouseY, -90f, 90f);
+
+        // Smoothly interpolate rotation
+        Vector3 targetRotation = new Vector3(mouseY, mouseX);
+        transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, targetRotation, rotationSmoothing);
+
+        // Calculate the new position based on player's position and camera orientation
+        Vector3 offset = Quaternion.Euler(mouseY, mouseX, 0) * new Vector3(0, 0, -distanceFromPlayer);
+        Vector3 newPosition = playerTransform.position + offset + Vector3.up * heightOffset;
+
+        // Move the camera to the new position
+        transform.position = Vector3.Lerp(transform.position, newPosition, rotationSmoothing);
+        
+        // Ensure the camera always looks at the player
+        transform.LookAt(playerTransform);
     }
 }

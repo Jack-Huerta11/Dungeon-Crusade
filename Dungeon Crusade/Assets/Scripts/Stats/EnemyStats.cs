@@ -9,9 +9,11 @@ public class EnemyStats : CharacterStats {
 	{
 		base.Die();
 
+		// add point system
+
 		// Add ragdoll effect / death animation
 
 		Destroy(gameObject);
 	}
 
-}
+} 

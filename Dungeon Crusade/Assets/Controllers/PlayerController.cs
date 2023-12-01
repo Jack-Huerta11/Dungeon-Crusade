@@ -2,73 +2,151 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private CameraController cameraController;
-    private float lockOnRadius = 10f; // Adjust this radius as needed
+    public CharacterController characterController;
+    public Camera playerCamera;
+    public float walkSpeed = 5f;
+    public float sprintMultiplier = 1.5f;
+    public float runMultiplier = 1.25f;
+    public float rotationSpeed = 10f;
+    public float maxJumpForce = 8f;
+    public float gravity = 30f;
+    private Interactable focus;
+    private PlayerMotor motor;
+    public PlayerStats PlayerStats { get; private set;}
+    private Vector3 playerVelocity; 
+    private bool isGrounded;
 
-    private void Start()
+ void Update()
+{
+    HandleMovementInput();
+    HandleJumpInput();
+
+    // Check for object interaction using the "E" key
+    if (Input.GetKeyDown(KeyCode.E))
     {
-        cameraController = Camera.main.GetComponent<CameraController>();
+        TryInteractWithObject();
     }
-
-    private void Update()
+}
+  void Start()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            InteractWithObject();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            ToggleLockOn();
-        }
+        // Assuming PlayerMotor is attached to the same GameObject
+        motor = GetComponent<PlayerMotor>();
+        // Other initialization code...
+        PlayerStats = GetComponentInChildren<PlayerStats>();
     }
+    // If we press right mouse
+void TryInteractWithObject()
+{
+    Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
+    RaycastHit hit;
 
-    void InteractWithObject()
+    if (Physics.Raycast(ray, out hit, 100))
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 3f); // Change the radius as needed
+        Interactable interactable = hit.collider.GetComponent<Interactable>();
 
-        float nearestDistance = Mathf.Infinity;
-        Transform nearestInteractable = null;
-
-        foreach (var collider in colliders)
+        if (interactable != null)
         {
-            Interactable interactable = collider.GetComponent<Interactable>();
-            if (interactable != null)
+            float distance = Vector3.Distance(transform.position, hit.collider.transform.position);
+
+            // Adjust the interactable distance based on your needs
+            if (distance <= interactable.radius)
             {
-                float distance = Vector3.Distance(transform.position, collider.transform.position);
-                if (distance < nearestDistance)
-                {
-                    nearestDistance = distance;
-                    nearestInteractable = collider.transform;
-                }
+                SetFocus(interactable);
+            }
+            else
+            {
+                RemoveFocus(); // If the object is out of range, remove focus
             }
         }
-
-        if (nearestInteractable != null)
+        else
         {
-            nearestInteractable.GetComponent<Interactable>().Interact();
+            RemoveFocus(); // If there's no interactable, remove focus
         }
     }
-
-    void ToggleLockOn()
+    else
     {
-        Collider[] interactables = Physics.OverlapSphere(transform.position, lockOnRadius);
+        RemoveFocus(); // If the ray doesn't hit anything, remove focus
+    }
+}
 
-        float nearestDistance = Mathf.Infinity;
-        Transform nearestInteractable = null;
+    void HandleMovementInput()
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
-        foreach (var collider in interactables)
+        Vector3 inputDirection = new Vector3(horizontal, 0f, vertical).normalized;
+        Vector3 rotatedInput = playerCamera.transform.TransformDirection(inputDirection);
+        rotatedInput.y = 0;
+
+        float speed = walkSpeed;
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            Interactable interactable = collider.GetComponent<Interactable>();
-            if (interactable != null)
-            {
-                float distance = Vector3.Distance(transform.position, collider.transform.position);
-                if (distance < nearestDistance)
-                {
-                    nearestDistance = distance;
-                    nearestInteractable = collider.transform;
-                }
-            }
+            speed *= Input.GetKey(KeyCode.LeftControl) ? runMultiplier : sprintMultiplier;
+        }
+
+        characterController.Move(rotatedInput * speed * Time.deltaTime);
+
+        if (rotatedInput != Vector3.zero)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(rotatedInput, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
     }
+
+    void HandleJumpInput()
+    {
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            playerVelocity.y = Mathf.Sqrt(maxJumpForce * -2f * gravity);
+        }
+
+        playerVelocity.y += gravity * Time.deltaTime;
+        characterController.Move(playerVelocity * Time.deltaTime);
+
+        isGrounded = characterController.isGrounded;
+    }
+
+ void SetFocus(Interactable newFocus)
+    {
+        // If our focus has changed
+        if (newFocus != focus)
+        {
+            // Defocus the old one
+            if (focus != null)
+                focus.OnDefocused();
+
+            focus = newFocus; // Set our new focus
+
+            // You need to initialize 'motor' with an instance of YourMotorClass.
+            // For example, motor = new YourMotorClass();
+            
+            // Follow the new focus
+            motor.FollowTarget(newFocus);
+        }
+
+        newFocus.OnFocused(transform);
+    }
+ // Remove our current focus
+    void RemoveFocus()
+    {
+        if (focus != null)
+            focus.OnDefocused();
+
+        focus = null;
+
+        // You need to initialize 'motor' with an instance of YourMotorClass.
+        // For example, motor = new YourMotorClass();
+        
+        motor.StopFollowingTarget();
+    }
+     public void ApplyUpgrade(float speedIncrease, float jumpIncrease, int healthIncrease, float attackSpeedIncrease)
+    {
+        walkSpeed += speedIncrease;
+        maxJumpForce += jumpIncrease;
+
+        // Optionally, you might want to put some constraints on the upgraded values
+        // For example, ensure maxJumpForce doesn't exceed a maximum value.
+        maxJumpForce = Mathf.Clamp(maxJumpForce, 0, maxJumpForce);
+    }
+
 }

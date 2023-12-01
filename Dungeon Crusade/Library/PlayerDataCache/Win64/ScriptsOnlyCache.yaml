@@ -8,24 +8,31 @@ ScriptsOnlyBuild:
     - Chest
     - Enemy
     - EnemyController
+    - EnemySpawner
     - EnemyStats
     - Equipment
     - EquipmentManager
     - FoodItem
     - HealthBar
+    - HeightMapSettings
+    - HideOnPlay
     - Inventory
     - InventorySlot
     - InventoryUI
+    - ItemDropManager
     - ItemPickup
-    - MapDisplay
-    - MapGenerator
+    - LevelingUIManager
+    - MainMenu
+    - MapPreview
+    - MeshSettings
+    - PlayerAnimations
+    - PlayerAnimator
     - PlayerController
     - PlayerManager
-    - PlayerMovement
     - PlayerStats
-    - Spawner
-    Unity.AI.Navigation.Editor.dll:
-    - Unity.AI.Navigation.Editor.NavMeshAssetManager
+    - TerrainGenerator
+    - TextureData
+    - ThreadedDataRequester
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.Rider.Editor.dll:
@@ -33,10 +40,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -54,8 +59,11 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
   serializedClasses:
     Assembly-CSharp:
+    - LODInfo
+    - NoiseSettings
     - Stat
-    - TerrainType
+    - TextureData/Layer
+    - UpgradeOption
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -72,17 +80,11 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: InventorySlot
-    methodName: OnRemoveButton
+    fullTypeName: MainMenu
+    methodName: PlayGame
   - assembly: Assembly-CSharp
-    fullTypeName: InventorySlot
-    methodName: UseItem
-  - assembly: Assembly-CSharp
-    fullTypeName: InventorySlot
-    methodName: OnRemoveButton
-  - assembly: Assembly-CSharp
-    fullTypeName: InventorySlot
-    methodName: UseItem
+    fullTypeName: MainMenu
+    methodName: ExitGame
   - assembly: Assembly-CSharp
     fullTypeName: InventorySlot
     methodName: OnRemoveButton
@@ -191,7 +193,86 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: InventorySlot
     methodName: UseItem
+  - assembly: Assembly-CSharp
+    fullTypeName: InventorySlot
+    methodName: OnRemoveButton
+  - assembly: Assembly-CSharp
+    fullTypeName: InventorySlot
+    methodName: UseItem
+  - assembly: Assembly-CSharp
+    fullTypeName: InventorySlot
+    methodName: OnRemoveButton
+  - assembly: Assembly-CSharp
+    fullTypeName: InventorySlot
+    methodName: UseItem
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelingUIManager
+    methodName: UpgradeOption
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelingUIManager
+    methodName: UpgradeOption
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelingUIManager
+    methodName: UpgradeOption
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelingUIManager
+    methodName: UpgradeOption
   sceneClasses:
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 72
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1622}
+    - Class: 114
+      Script: {instanceID: 1664}
+    - Class: 114
+      Script: {instanceID: 2716}
+    - Class: 114
+      Script: {instanceID: 2922}
+    - Class: 114
+      Script: {instanceID: 5524}
+    - Class: 114
+      Script: {instanceID: 5850}
+    - Class: 114
+      Script: {instanceID: 6348}
+    - Class: 114
+      Script: {instanceID: 8184}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -211,19 +292,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 72
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -238,76 +317,92 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1570}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1612}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 1672}
+      Script: {instanceID: 1726}
     - Class: 114
-      Script: {instanceID: 1688}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 1964}
+      Script: {instanceID: 2018}
     - Class: 114
-      Script: {instanceID: 1994}
+      Script: {instanceID: 2048}
     - Class: 114
-      Script: {instanceID: 2130}
+      Script: {instanceID: 2184}
     - Class: 114
-      Script: {instanceID: 2142}
+      Script: {instanceID: 2196}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2660}
+      Script: {instanceID: 2716}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2804}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2922}
     - Class: 114
-      Script: {instanceID: 2954}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3192}
+      Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 3560}
     - Class: 114
-      Script: {instanceID: 4218}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 4836}
+      Script: {instanceID: 4076}
     - Class: 114
-      Script: {instanceID: 4924}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 5094}
+      Script: {instanceID: 4994}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5444}
+      Script: {instanceID: 5130}
     - Class: 114
-      Script: {instanceID: 5768}
+      Script: {instanceID: 5168}
     - Class: 114
-      Script: {instanceID: 6094}
+      Script: {instanceID: 5300}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 5432}
+    - Class: 114
+      Script: {instanceID: 5524}
+    - Class: 114
+      Script: {instanceID: 5746}
+    - Class: 114
+      Script: {instanceID: 5850}
+    - Class: 114
+      Script: {instanceID: 6180}
     - Class: 114
       Script: {instanceID: 6260}
     - Class: 114
-      Script: {instanceID: 6410}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 6840}
+      Script: {instanceID: 6500}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 6866}
     - Class: 114
-      Script: {instanceID: 7458}
+      Script: {instanceID: 6938}
     - Class: 114
-      Script: {instanceID: 8116}
+      Script: {instanceID: 7118}
     - Class: 114
-      Script: {instanceID: 24468}
+      Script: {instanceID: 7558}
     - Class: 114
-      Script: {instanceID: 40022}
+      Script: {instanceID: 7650}
     - Class: 114
-      Script: {instanceID: 45798}
+      Script: {instanceID: 7736}
+    - Class: 114
+      Script: {instanceID: 7762}
+    - Class: 114
+      Script: {instanceID: 7820}
+    - Class: 114
+      Script: {instanceID: 7900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -316,8 +411,6 @@ ScriptsOnlyBuild:
     - Class: 143
       Script: {instanceID: 0}
     - Class: 157
-      Script: {instanceID: 0}
-    - Class: 195
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
@@ -356,12 +449,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: InventoryUI
-  - hash:
-      serializedVersion: 2
-      Hash: 977f314f3a093a447cb6806407169251
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MapDisplay
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -406,7 +493,13 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1723e204c9f289da50b7588daa9685a7
+      Hash: 8c930bcfb9580256766c6a3c26fb3822
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TerrainGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: f25b19ca7102db79d622abb3e67e1dc6
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerStats
@@ -424,7 +517,7 @@ ScriptsOnlyBuild:
     className: InventorySlot
   - hash:
       serializedVersion: 2
-      Hash: b236dffeec4a809d86cabb404e79247d
+      Hash: a571231843b4b967f159fc822bd87420
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Equipment
@@ -478,7 +571,7 @@ ScriptsOnlyBuild:
     className: ConvertToRegularMesh
   - hash:
       serializedVersion: 2
-      Hash: 1723e204c9f289da50b7588daa9685a7
+      Hash: e9361a97ea44d42d3bbaaf48f2b54579
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EnemyStats
@@ -526,10 +619,16 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 6ce878d84e06975702e2d7f4659637bd
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CharacterAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConstantAnimation
   - hash:
       serializedVersion: 2
       Hash: daf583db78d49584fe488bb962b90b24
@@ -554,6 +653,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 3cc99894eb815ecad1126df6f0e0f5b5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MapPreview
   - hash:
       serializedVersion: 2
       Hash: 34fa63a30926bcf55d7323dae76be890
@@ -586,12 +691,6 @@ ScriptsOnlyBuild:
     className: UnityOnInputFieldEndEditMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 8ee54d1cceca49921f72772f25f17be6
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerMovement
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -602,6 +701,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b8a8a12db531daec989d2d77e9b11ef9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: UpdatableData
   - hash:
       serializedVersion: 2
       Hash: a4d905db69ca7f45f45458ae380fb66f
@@ -646,6 +751,12 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MeshToSkinnedMeshConverter
+  - hash:
+      serializedVersion: 2
       Hash: 0249933f35dcc970b31eaae0159aebf9
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -670,7 +781,7 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1723e204c9f289da50b7588daa9685a7
+      Hash: e9361a97ea44d42d3bbaaf48f2b54579
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CharacterStats
@@ -680,6 +791,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 250eba15d7cbdcdf153fb785d355a112
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LevelingUIManager
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -730,13 +847,19 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: HideOnPlay
+  - hash:
+      serializedVersion: 2
       Hash: b18151310f999106767addd7177d1a99
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: d953954ef7bca71bd58f1432f8725ea3
+      Hash: d829a8a882ba06dbda9139fc2996d9e2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Item
@@ -800,12 +923,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnJointBreak2DMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: f5d598e2a6864bcf58f88250cdc5ad99
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MapGenerator
   - hash:
       serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
@@ -916,6 +1033,18 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: ff95b7fa29bf136e72466c7b451791d2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerAnimations
+  - hash:
+      serializedVersion: 2
+      Hash: af6aba4700d787ec3e4652175a8bf329
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnemySpawner
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -959,6 +1088,18 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ThreadedDataRequester
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TerrianObjectSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameInvisibleMessageListener
@@ -968,6 +1109,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 8c1734ebccfc7de519523ca404ba5b75
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TerrainData
   - hash:
       serializedVersion: 2
       Hash: f701137b5fe9552c6bf7c218e1d6c0d5
@@ -1018,6 +1165,12 @@ ScriptsOnlyBuild:
     className: ExampleWheelController
   - hash:
       serializedVersion: 2
+      Hash: e8a24d014b2d5b265c18e17fa8a40670
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: HeightMapSettings
+  - hash:
+      serializedVersion: 2
       Hash: 6a356b04c25c0bb008c1b24bf8b0f996
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1034,6 +1187,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 6a97cfac920a0f9e1d30e3f95b4e4659
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Readme
   - hash:
       serializedVersion: 2
       Hash: 46ffbaea01259c5c7ee677afefd93ea8
@@ -1054,7 +1213,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d0c332766f8aeb14a69861ad25b3b72c
+      Hash: ea1f16c8bfe3bc0155d723aae7ebce6d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FoodItem
@@ -1102,7 +1261,13 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 884e89778372d897b3985bd942a64309
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerMotor
+  - hash:
+      serializedVersion: 2
+      Hash: 557548b9407999bb3f28ad32708dab3d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EnemyController
@@ -1115,6 +1280,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MeshFromSkinMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDragMessageListener
@@ -1124,6 +1295,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 45f8d9e27d232af76b0ff219366bed7b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConvertToSkinnedMesh
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1150,10 +1327,22 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 4fe8785acb44bb69080e8f193e2a3bc8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerAnimator
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerEnter2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 981b3425570e242d012783e210cb7642
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Damage
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1168,7 +1357,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: a9f4d95593049c8822101ce130ece7ca
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1196,6 +1385,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerDownMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e5df81abed1134db8b5fca600689004a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ChestSpawner
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1258,7 +1453,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 63cd8c8cc7263580febb9c5bd09a2464
+      Hash: d15545db242933aa675f38d755ccdd2e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CameraController
@@ -1270,10 +1465,22 @@ ScriptsOnlyBuild:
     className: UnityOnParticleCollisionMessageListener
   - hash:
       serializedVersion: 2
+      Hash: f9f0a0b8f13ef2a29ac06bc6e35cf80f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TextureData
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseOverMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4ba038c55047bf1ded1ce1616aee9a6d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: campFire
   - hash:
       serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
@@ -1282,10 +1489,22 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: 1ad2ee9b543972b9ce998ae53705aba1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CharacterCombat
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: b557e8f090ab85e5084a9a6e90af88da
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MeshSettings
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1294,10 +1513,22 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 788edbd4d56a140f7d387ee80eb71565
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ItemDropManager
+  - hash:
+      serializedVersion: 2
       Hash: 28873fe9170abb2910f2c4b88a93bb0f
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: f8eb7013b658e6ce54d17365eb6dbd01
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Chest
   - hash:
       serializedVersion: 2
       Hash: afe1800287c9574079eab3fea2622416
@@ -1324,6 +1555,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 6a1d1a7b12ed8aa496047c24414b8b40
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1334,32 +1571,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: f8eb7013b658e6ce54d17365eb6dbd01
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Chest
-  - hash:
-      serializedVersion: 2
-      Hash: d2017bb17a0c0353000229c4302bed89
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CharacterCombat
-  - hash:
-      serializedVersion: 2
-      Hash: e5df81abed1134db8b5fca600689004a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ChestSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: a31105e1235ab850b939e88e7b3d6a09
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Spawner
   platform: 19
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SampleScene.unity
   playerPath: C:/Users/jhhue/Dungeon Crusade/Unity Projects tests/Dungeon Crusade_Data/Dungeon
     Crusade.exe

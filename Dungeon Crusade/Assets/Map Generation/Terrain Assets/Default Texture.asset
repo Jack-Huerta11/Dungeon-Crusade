@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a472a4cf68c2519498d86f7725bf66c3, type: 3}
+  m_Name: Default Texture
+  m_EditorClassIdentifier: 
+  autoUpdate: 1
+  layers:
+  - texture: {fileID: 2800000, guid: 45f9ee9c4a6e94645b0ce6112e80b1e1, type: 3}
+    tint: {r: 0.20287468, g: 0.33531246, b: 0.9150943, a: 0}
+    tintStrength: 0.19
+    startHeight: 0
+    blendStrength: 0
+    textureScale: 7.47
+  - texture: {fileID: 2800000, guid: fa9456f4528ca2c41b945ecb0b1e19f0, type: 3}
+    tint: {r: 0.8301887, g: 0.82036984, b: 0.7244571, a: 0}
+    tintStrength: 0
+    startHeight: 0.062
+    blendStrength: 0.041
+    textureScale: 5.22
+  - texture: {fileID: 2800000, guid: 7b3c47a69f6f42b44a5b9497a6ae9776, type: 3}
+    tint: {r: 0.1616843, g: 0.6037736, b: 0.09967959, a: 0}
+    tintStrength: 0
+    startHeight: 0.142
+    blendStrength: 0.052
+    textureScale: 30.2
+  - texture: {fileID: 2800000, guid: 61b5a82997e29b34ea336193119f5629, type: 3}
+    tint: {r: 0.3773585, g: 0.2454177, b: 0.05517978, a: 0}
+    tintStrength: 0
+    startHeight: 0.323
+    blendStrength: 0.334
+    textureScale: 8.76
+  - texture: {fileID: 2800000, guid: b6c5c53fbb8d02447a23bb90a4182766, type: 3}
+    tint: {r: 0.23584908, g: 0.107756674, b: 0.016687432, a: 0}
+    tintStrength: 0
+    startHeight: 0.502
+    blendStrength: 0.22
+    textureScale: 3.21
+  - texture: {fileID: 2800000, guid: f240fbf94d591a64a8c2dfa89d11cd5e, type: 3}
+    tint: {r: 0.047169805, g: 0, b: 0, a: 0}
+    tintStrength: 1
+    startHeight: 0.835
+    blendStrength: 0.35
+    textureScale: 0
+  - texture: {fileID: 2800000, guid: 4d9a63d655a3f5a4397c9599c1f2ba52, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 0}
+    tintStrength: 1
+    startHeight: 1
+    blendStrength: 0.012
+    textureScale: 0

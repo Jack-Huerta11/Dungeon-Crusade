@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/* Sits on all InventorySlots. */
 
 public class InventorySlot : MonoBehaviour {
 

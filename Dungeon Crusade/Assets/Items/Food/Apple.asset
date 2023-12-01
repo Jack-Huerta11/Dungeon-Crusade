@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eec06548bdd48a4caf0c3a38f234265, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 0}
+  itemName: 
   name: Apple
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 61d01e8616313344b978a6518fd86ed6, type: 3}
   isDefaultItem: 0
   foodName: Apple
   healthRestoreAmount: 3
